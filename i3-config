@@ -129,8 +129,8 @@ bindsym Mod1+Shift+9 move container to workspace 9
 bindsym Mod1+Shift+0 move container to workspace 10
 
 # audio keys
-bindsym XF86AudioRaiseVolume exec pamixer -i 5
-bindsym XF86AudioLowerVolume exec pamixer -d 5
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u
+bindsym XF86AudioLowerVolume exec pamixer -d 5 -u
 bindsym XF86AudioMute exec pamixer -t
 
 # reload the configuration file
@@ -183,7 +183,10 @@ bar {
 #######################################################################
 #exec i3-config-wizard
 
-exec hsetroot -center ~/Pictures/renard_1080.jpg
+exec hsetroot -center ~/Pictures/Wallpapers/arseniy-chebynkin-57.jpg
 bindsym Mod1+Shift+F10 exec pactl set-default-sink 0 && pulseaudio-set-all-sink-inputs 0
 bindsym Mod1+Shift+F11 exec pactl set-default-sink 1 && pulseaudio-set-all-sink-inputs 1
 bindsym Mod1+Shift+F12 exec pactl set-default-sink 2 && pulseaudio-set-all-sink-inputs 2
+
+exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 
+exec export GTK_THEME=Arc-Dark
