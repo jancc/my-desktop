@@ -8,4 +8,4 @@ mkdir -p ~/.config/i3status
 cp i3status-config ~/.config/i3status/config
 cp redshift.conf ~/.config/redshift.conf
 sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all-sink-inputs
-
+sudo install brightness.sh /usr/local/bin/brightness-set
