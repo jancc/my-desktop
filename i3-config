@@ -191,6 +191,7 @@ bindsym Mod1+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sampl
 bindsym Mod1+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample click
 
 exec redshift-gtk
+exec nm-applet
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 
 exec export GTK_THEME=Arc-Dark
