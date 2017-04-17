@@ -187,7 +187,8 @@ bar {
 #######################################################################
 #exec i3-config-wizard
 
-exec hsetroot -center ~/.janstuff/wallpaper.jpg
+#exec hsetroot -center ~/.janstuff/wallpaper.jpg
+exec hsetroot
 exec pactl upload-sample ~/.janstuff/click.wav click
 bindsym Mod1+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample click
 bindsym Mod1+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample click
