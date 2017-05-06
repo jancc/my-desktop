@@ -176,6 +176,9 @@ bar {
         status_command i3status
 }
 
+new_window pixel 1
+hide_edge_borders smart
+
 # class                 border  backgr. text    indicator child_border
 #client.focused          #18be18 #0d0d0d #00ea00 #00ea00   #2d522d
 #client.focused_inactive #2d522d #0d0d0d #18be18 #00aa00   #2d522d
