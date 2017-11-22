@@ -12,3 +12,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 export PS1="%n@%m %~$ "
+
+# aliases
+alias ls="ls -h --color=auto"
