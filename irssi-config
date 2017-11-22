@@ -379,6 +379,6 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Jan"; user_name = "jancc"; nick = "jancc"; };
+  core = { real_name = "Jan"; user_name = "hu5ky"; nick = "hu5ky"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
