@@ -8,7 +8,7 @@ set smartindent
 
 " show invisible characters
 set list
-set listchars=eol:$,tab:»-,trail:~,extends:»,precedes:«,nbsp:⣿
+set listchars=tab:»-,trail:~,extends:»,precedes:«,nbsp:⣿
 
 " syntax hightlighting
 syntax on
