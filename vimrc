@@ -18,3 +18,15 @@ syntax on
 
 " line numbers
 set number
+
+" maintain undo history
+set undofile
+set undodir=~/.vim/undo
+set noswapfile
+
+" no startup message
+set shortmess+=I
+
+" highlight search
+:set hlsearch
+:set incsearch
