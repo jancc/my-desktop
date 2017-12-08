@@ -3,11 +3,12 @@ scriptencoding utf-8
 
 " default indenting behaviour
 " tab = 4 spaces
-" tabs for indentation
+" spaces for indentation
 set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+set expandtab
 
 " show invisible characters
 set list
