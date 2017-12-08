@@ -30,3 +30,19 @@ set shortmess+=I
 " highlight search
 :set hlsearch
 :set incsearch
+
+" plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'valloric/youcompleteme'
+Plug 'altercation/vim-colors-solarized'
+Plug 'pangloss/vim-javascript'
+Plug 'rdnetto/ycm-generator'
+
+call plug#end()
+
+" solarized colors
+syntax enable
+set background=dark
+colorscheme solarized
+
