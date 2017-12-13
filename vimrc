@@ -39,6 +39,7 @@ Plug 'valloric/youcompleteme'
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'rdnetto/ycm-generator'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
