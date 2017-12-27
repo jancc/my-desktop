@@ -220,6 +220,7 @@ bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sampl
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample click
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample click
 bindsym Mod4+Shift+o exec i3lock -c 000000
+bindsym --release Mod4+Print exec scrot -s
 
 exec redshift-gtk
 exec nm-applet
