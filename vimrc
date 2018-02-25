@@ -36,7 +36,7 @@ set shortmess+=I
 call plug#begin('~/.vim/plugged')
 
 Plug 'valloric/youcompleteme'
-Plug 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
 Plug 'pangloss/vim-javascript'
 Plug 'rdnetto/ycm-generator'
 Plug 'scrooloose/nerdtree'
@@ -49,6 +49,5 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " solarized colors
 syntax enable
-set background=dark
-colorscheme solarized
-
+colorscheme molokai
+let g:molokai_original=1
