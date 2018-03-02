@@ -26,10 +26,10 @@ font pango:monospace 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up l
-set $down k
-set $left j
-set $right semicolon
+#set $up l
+#set $down k
+#set $left j
+#set $right semicolon
 
 # use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4
@@ -136,6 +136,9 @@ bindsym Mod4+Shift+0 move container to workspace 10
 bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && pactl play-sample click
 bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && pactl play-sample click
 bindsym XF86AudioMute exec pamixer -t
+bindsym XF86AudioPlay exec cmus-remote -u
+bindsym XF86AudioNext exec cmus-remote -n
+bindsym XF86AudioPrev exec cmus-remote -r
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
@@ -220,7 +223,7 @@ exec pactl upload-sample ~/.janstuff/click.wav click
 bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample click
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample click
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample click
-bindsym Mod4+Shift+o exec i3lock -c 000000
+bindsym Mod4+l exec i3lock -c 000000
 bindsym --release Mod4+Print exec scrot -s
 
 exec redshift-gtk
