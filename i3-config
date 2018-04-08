@@ -133,8 +133,8 @@ bindsym Mod4+Shift+9 move container to workspace 9
 bindsym Mod4+Shift+0 move container to workspace 10
 
 # audio keys
-bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && pactl play-sample click
-bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && pactl play-sample click
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && pactl play-sample volchange
+bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && pactl play-sample volchange
 bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioPlay exec cmus-remote -u
 bindsym XF86AudioNext exec cmus-remote -n
@@ -180,11 +180,11 @@ bar {
     status_command i3status
     colors {
         background #000000
-        statusline #839496
-        separator  #586e75
-        focused_workspace  #b58900 #b58900 #002b36
-        active_workspace   #586e75 #586e75 #002b36
-        inactive_workspace #000000 #000000 #839496
+        statusline #C5EF53
+        separator  #C5EF53
+        focused_workspace  #404E19 #404E19 #D3FF5B
+        active_workspace   #404E19 #404E19 #D3FF5B
+        inactive_workspace #000000 #000000 #C5EF53
         urgent_workspace   #dc322f #dc322f #fdf6e3
     }
 }
@@ -219,10 +219,10 @@ client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 
 #exec hsetroot -center ~/.janstuff/wallpaper.jpg
 exec hsetroot
-exec pactl upload-sample ~/.janstuff/click.wav click
-bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample click
-bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample click
-bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample click
+exec pactl upload-sample ~/.janstuff/drip.ogg volchange
+bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample volchange
+bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
+bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
 bindsym Mod4+l exec i3lock -c 000000
 bindsym --release Mod4+Print exec scrot -s
 

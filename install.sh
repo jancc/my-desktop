@@ -1,6 +1,7 @@
 #/bin/sh
 mkdir -p ~/.janstuff
 ln -f -s $PWD/click.wav ~/.janstuff/click.wav
+ln -f -s $PWD/drip.ogg ~/.janstuff/drip.ogg
 ln -f -s $PWD/wallpaper.jpg ~/.janstuff/wallpaper.jpg
 mkdir -p ~/.config/i3
 ln -f -s $PWD/i3-config ~/.config/i3/config
