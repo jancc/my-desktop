@@ -38,6 +38,13 @@ servers = (
     address = "irc.globalgamers.net";
     chatnet = "GlobalGamers";
     port = "6667";
+  },
+  {
+    address = "irc.hackint.org";
+    chatnet = "HackInt";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "no";
   }
 );
 
@@ -112,6 +119,7 @@ chatnets = {
   };
   FurNet = { type = "IRC"; };
   GlobalGamers = { type = "IRC"; };
+  HackInt = { type = "IRC"; };
 };
 
 channels = (
@@ -379,6 +387,6 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Jan"; user_name = "hu5ky"; nick = "hu5ky"; };
+  core = { real_name = "Jan"; user_name = "jancc"; nick = "jancc"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
