@@ -233,3 +233,5 @@ exec nm-applet
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 
 exec export GTK_THEME=Arc-Dark
+
+exec setxkbmap -option caps:escape
