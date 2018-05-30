@@ -21,3 +21,4 @@ sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all
 sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install x11-enable-screensaving.sh /usr/local/bin/x11-enable-screensaving
 sudo install x11-disable-screensaving.sh /usr/local/bin/x11-disable-screensaving
+sudo install ssh-tunnel.sh /usr/local/bin/ssh-tunnel
