@@ -7,4 +7,4 @@ echo "Remote Port:"
 read remoteport
 echo "Local Port:"
 read localport
-ssh -L $localport:localhost:$remoteport $remoteuser@$remotehost
+ssh -nNT -L $localport:localhost:$remoteport $remoteuser@$remotehost

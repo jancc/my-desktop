@@ -38,7 +38,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'valloric/youcompleteme'
 Plug 'tomasr/molokai'
 Plug 'pangloss/vim-javascript'
-Plug 'rdnetto/ycm-generator'
 Plug 'scrooloose/nerdtree'
 
 call plug#end()
