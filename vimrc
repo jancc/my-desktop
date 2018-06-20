@@ -9,6 +9,8 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set expandtab
+set mouse=a
+set scrolloff=5
 
 " show invisible characters
 set list
@@ -50,3 +52,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 syntax enable
 colorscheme molokai
 let g:molokai_original=1
+
+" column at 80 characters
+set colorcolumn=80
