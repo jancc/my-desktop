@@ -7,6 +7,7 @@ mkdir -p ~/.config/i3
 ln -f -s $PWD/i3-config ~/.config/i3/config
 mkdir -p ~/.config/i3status
 ln -f -s $PWD/i3status-config ~/.config/i3status/config
+ln -f -s $PWD/i3blocks.conf ~/.i3blocks.conf
 ln -f -s $PWD/redshift.conf ~/.config/redshift.conf
 ln -f -s $PWD/irssi-config ~/.irssi/config
 ln -f -s $PWD/Xdefaults ~/.Xdefaults
