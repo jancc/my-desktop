@@ -41,6 +41,7 @@ Plug 'valloric/youcompleteme'
 Plug 'tomasr/molokai'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -48,10 +49,14 @@ call plug#end()
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
-" solarized colors
+" nice colors
 syntax enable
 colorscheme molokai
 let g:molokai_original=1
+" transparent background
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+hi LineNr ctermbg=none
 
-" column at 80 characters
-set colorcolumn=80
+" column at x characters
+set colorcolumn=120

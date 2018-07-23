@@ -2,6 +2,9 @@ URxvt.saveLines: 1000
 URxvt.scrollBar: false
 URxvt.foreground: grey
 URxvt.background: black
+URxvt.transparent: true
+URxvt.tintColor: white
+URxvt.shading: 20
 URxvt.secondaryScroll: true
 URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=14
 URxvt.lineSpace: 1
@@ -16,8 +19,7 @@ URxvt.tabbed.tab-fg: 0
 URxvt.tabbed.tab-bg: 1
 URxvt.tabbed.secondaryScroll: true
 URxvt.tabbed.font: xft:Bitstream Vera Sans Mono:pixelsize=14
-URxvt*inheritPixmap: true 
-URxvt*shading: 70
+URxvt*inheritPixmap: true
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
