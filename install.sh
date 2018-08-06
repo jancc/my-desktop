@@ -1,8 +1,5 @@
 #/bin/sh
-mkdir -p ~/.janstuff
-ln -f -s $PWD/click.wav ~/.janstuff/click.wav
-ln -f -s $PWD/drip.ogg ~/.janstuff/drip.ogg
-ln -f -s $PWD/wallpaper.jpg ~/.janstuff/wallpaper.jpg
+ln -f -s $PWD/janstuff ~/.janstuff
 mkdir -p ~/.config/i3
 ln -f -s $PWD/i3-config ~/.config/i3/config
 mkdir -p ~/.config/i3status
@@ -23,3 +20,4 @@ sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install x11-enable-screensaving.sh /usr/local/bin/x11-enable-screensaving
 sudo install x11-disable-screensaving.sh /usr/local/bin/x11-disable-screensaving
 sudo install ssh-tunnel.sh /usr/local/bin/ssh-tunnel
+sudo install cronjobs /etc/cron.d/jancron

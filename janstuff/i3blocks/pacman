@@ -1,0 +1,6 @@
+#!/bin/sh
+UPDATECOUNT=$(pacman -Qu | wc -l)
+if [ $UPDATECOUNT != 0 ]
+then
+    echo "$UPDATECOUNT"
+fi
