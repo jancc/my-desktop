@@ -1,5 +1,5 @@
 # Update Pacman DB
-25 * * * * pacman -Sy
+25 * * * * root pacman -Sy
 
 # Download (don't install) new packages
-44 */2 * * * pacman -Syuw --noconfirm
+44 */2 * * * root pacman -Syuw --noconfirm

@@ -20,4 +20,4 @@ sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install x11-enable-screensaving.sh /usr/local/bin/x11-enable-screensaving
 sudo install x11-disable-screensaving.sh /usr/local/bin/x11-disable-screensaving
 sudo install ssh-tunnel.sh /usr/local/bin/ssh-tunnel
-sudo install cronjobs /etc/cron.d/jancron
+sudo install -m 0644 cronjobs /etc/cron.d/jancron
