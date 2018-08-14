@@ -45,6 +45,13 @@ servers = (
     port = "6697";
     use_tls = "yes";
     tls_verify = "no";
+  },
+  {
+    address = "unix.chat";
+    chatnet = "unix.chat";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "yes";
   }
 );
 

@@ -222,12 +222,12 @@ client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 #######################################################################
 #exec i3-config-wizard
 
-exec feh --bg-center ~/.janstuff/wallpaper.jpg
+exec feh --bg-fill ~/.janstuff/wallpapers/overgrown.jpg
 exec pactl upload-sample ~/.janstuff/drip.ogg volchange
 bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample volchange
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
-bindsym Mod4+l exec i3lock -c 000000
+bindsym Mod4+l exec scrot /tmp/screen.png && convert /tmp/screen.png -resize 5% -blur 0x1 -resize 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
 bindsym --release Mod4+Print exec scrot -s
 
 exec redshift-gtk
