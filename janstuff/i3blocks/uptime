@@ -1,0 +1,2 @@
+#!/bin/sh
+uptime -p | awk '{print $2 substr($3, 1, 1)}'
