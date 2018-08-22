@@ -9,7 +9,7 @@ URxvt.secondaryScroll: true
 URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=14
 URxvt.lineSpace: 1
 URxvt.perl-ext-common: default,matcher
-URxvt.urlLauncher: chromium
+URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.tabbed.saveLines: 1000
 URxvt.tabbed.scrollBar: false
@@ -24,6 +24,7 @@ URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.termName: xterm-256color
 
 !! black dark/light
 *color0: #073642
