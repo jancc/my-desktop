@@ -1,7 +1,7 @@
 #!/bin/bash
 SUDO=lxsudo
 function mount {
-    devices=$(lsblk -lp | grep "part $" | awk '{print $1, "(" $4 ")"}')
+    devices=$(lsblk -lp | grep "part *$" | awk '{print $1, "(" $4 ")"}')
     selected=$(echo "$devices" | dmenu -i | awk '{print $1}')
     if [ ! $selected ]; then
         exit 1
@@ -14,7 +14,7 @@ function mount {
 }
 
 function unmount {
-    devices=$(lsblk -lp | grep -v "part $" | grep "part" | awk '{print $1, "(" $7 ")"}')
+    devices=$(lsblk -lp | grep -v "part *$" | grep "part" | awk '{print $1, "(" $7 ")"}')
     selected=$(echo "$devices" | dmenu -i | awk '{print $1}')
     if [ ! $selected ]; then
         exit 1
