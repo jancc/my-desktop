@@ -1,0 +1,11 @@
+#!/bin/sh
+song=$(mpc current)
+if [ ! $song ]; then
+    exit 0
+fi
+state=$(mpc status | awk 'FNR == 2 {print $1}')
+nicestate='||'
+if [ $state == '[playing]' ]; then
+    nicestate='>'
+fi
+echo $nicestate $song

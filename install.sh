@@ -14,7 +14,10 @@ ln -f -s $PWD/tmux.conf ~/.tmux.conf
 ln -f -s $PWD/xinitrc ~/.xinitrc
 ln -f -s $PWD/sway/sway.sh ~/sway.sh
 chmod +x ~/sway.sh
+mkdir -p ~/.config/sway
 ln -f -s $PWD/sway/config ~/.config/sway/config
+mkdir -p ~/.config/mpd
+ln -f -s $PWD/mpd.conf ~/.config/mpd/mpd.conf
 sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all-sink-inputs
 sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install x11-enable-screensaving.sh /usr/local/bin/x11-enable-screensaving

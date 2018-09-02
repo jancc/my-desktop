@@ -138,9 +138,9 @@ bindsym Mod4+Shift+0 move container to workspace 10
 bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && pactl play-sample volchange
 bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && pactl play-sample volchange
 bindsym XF86AudioMute exec pamixer -t
-bindsym XF86AudioPlay exec cmus-remote -u
-bindsym XF86AudioNext exec cmus-remote -n
-bindsym XF86AudioPrev exec cmus-remote -r
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
@@ -229,6 +229,8 @@ bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sampl
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
 bindsym Mod4+l exec scrot /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
 bindsym --release Mod4+Print exec scrot -s
+bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
+bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u
 
 exec redshift-gtk
 exec nm-applet
