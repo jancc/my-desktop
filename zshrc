@@ -99,4 +99,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+export GOPATH=~/code/go
+export PATH=$PATH:~/code/go/bin
 alias did="vim +'normal Go' +'r!date' ~/Sync/did.txt"
