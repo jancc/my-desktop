@@ -127,6 +127,7 @@ chatnets = {
   FurNet = { type = "IRC"; };
   GlobalGamers = { type = "IRC"; };
   HackInt = { type = "IRC"; };
+  "unix.chat" = { type = "IRC"; };
 };
 
 channels = (
