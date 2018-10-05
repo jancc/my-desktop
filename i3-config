@@ -233,7 +233,7 @@ bindsym --release Mod4+Print exec scrot -s
 bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
 bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u
 
-exec redshift-gtk
+exec redshift
 exec nm-applet
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 

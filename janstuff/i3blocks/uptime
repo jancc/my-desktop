@@ -1,2 +1,9 @@
-#!/bin/sh
-uptime -p | awk '{print $2 substr($3, 1, 1)}'
+#!/bin/bash
+uptime=$(uptime -p)
+out=""
+for i in {0..2}; do
+    u=$(($i * 2 + 2))
+    v=$(($i * 2 + 3))
+    out="$out $(echo $uptime | awk -v u="$u" -v v="$v" '{print $u substr($v, 1, 1)}')"
+done
+echo $out

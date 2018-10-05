@@ -6,6 +6,7 @@ servers = (
     address = "chat.freenode.net";
     chatnet = "Freenode";
     port = "6667";
+    use_tls = "yes";
   },
   {
     address = "irc.gamesurge.net";
@@ -395,6 +396,6 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Jan"; user_name = "jancc"; nick = "jancc"; };
+  core = { real_name = "jan"; user_name = "skelbe"; nick = "skelbe"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
