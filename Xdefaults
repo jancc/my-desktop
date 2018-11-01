@@ -21,10 +21,18 @@ URxvt.tabbed.secondaryScroll: true
 URxvt.tabbed.font: xft:Bitstream Vera Sans Mono:pixelsize=14
 URxvt*inheritPixmap: true
 URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+! perl extensions
+URxvt.perl-ext-common: default,clipboard,font-size
+! tmux fix
+URxvt.termName: xterm-256color
+! clipboard
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-URxvt.termName: xterm-256color
+! zooming
+URxvt.keysym.Control-asterisk: font-size:increase
+URxvt.keysym.Control-underscore: font-size:decrease
+URxvt.keysym.Control-0: font-size:reset
+
 
 !! black dark/light
 *color0: #073642
