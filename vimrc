@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'valloric/youcompleteme'
 Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'lervag/vimtex'
@@ -51,8 +52,15 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " nice colors
 syntax enable
-colorscheme molokai
-let g:molokai_original=1
+" molokai
+"colorscheme molokai
+"let g:molokai_original=1
+" solarized
+colorscheme solarized
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_visibility='low'
+
 " transparent background
 hi Normal ctermbg=none
 hi NonText ctermbg=none
