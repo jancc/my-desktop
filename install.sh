@@ -18,8 +18,7 @@ mkdir -p ~/.config/sway
 ln -f -s $PWD/sway/config ~/.config/sway/config
 mkdir -p ~/.config/mpd
 ln -f -s $PWD/mpd.conf ~/.config/mpd/mpd.conf
-mkdir -p ~/.config/fish/
-ln -f -s $PWD/fish_functions ~/.config/fish/functions
+ln -f -s $PWD/fish ~/.config/fish
 ln -f -s $PWD/urxvt ~/.urxvt
 sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all-sink-inputs
 sudo install brightness.sh /usr/local/bin/brightness-set
