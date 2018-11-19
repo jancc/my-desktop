@@ -198,10 +198,10 @@ hide_edge_borders smart
 smart_gaps on
 gaps inner 16
 
-client.focused          #002b36 #586e75 #fdf6e3 #268bd2
-client.focused_inactive #002b36 #073642 #839496 #073642
-client.unfocused        #002b36 #073642 #839496 #073642
-client.urgent           #002b36 #dc322f #fdf6e3 #002b36
+client.focused          #002b36 #55af33 #fdf6e3 #268bd2
+client.focused_inactive #002b36 #254f03 #839496 #073642
+client.unfocused        #002b36 #134321 #839496 #073642
+client.urgent           #002b36 #4f4312 #fdf6e3 #002b36
 
 # class                 border  backgr. text    indicator child_border
 #client.focused          #18be18 #0d0d0d #00ea00 #00ea00   #2d522d

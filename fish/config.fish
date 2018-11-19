@@ -7,3 +7,4 @@ end
 init_gui
 set -U fish_greeting
 set -U EDITOR vim
+set -U GOPATH ~/code/go
