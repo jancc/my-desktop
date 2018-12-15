@@ -11,4 +11,3 @@ ln -f -s $PWD/urxvt ~/.urxvt
 sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all-sink-inputs
 sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install ssh-tunnel.sh /usr/local/bin/ssh-tunnel
-sudo install -m 0644 cronjobs /etc/cron.d/jancron
