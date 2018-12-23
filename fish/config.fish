@@ -10,6 +10,6 @@ end
 
 set -U fish_greeting
 set -U EDITOR vim
-set -U GOPATH ~/code/go
+set -U GOPATH $HOME/code/go
 
 # init_gui
