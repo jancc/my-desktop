@@ -4,6 +4,7 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <Program icon="terminal.png" label="Terminal">urxvt</Program>
+        <Program label="KeepassXC">keepassxc</Program>
         <Menu icon="folder.png" label="Internet">
             <Program icon="www.png" label="Firefox">firefox</Program>
             <Program icon="www.png" label="Chromium">chromium</Program>
@@ -16,6 +17,8 @@
         </Menu>
         <Menu icon="folder.png" label="Development">
             <Program icon="editor.png" label="VSCode">code</Program>
+            <Program icon="editor.png" label="Android Studio">android-studio</Program>
+            <Program icon="editor.png" label="IntelliJ IDEA">idea</Program>
         </Menu>
         <Menu icon="folder.png" label="Utilities">
             <Program icon="calculator.png" label="Calculator">urxvt -e calc</Program>
@@ -80,10 +83,10 @@
 
     <!-- Visual Styles -->
     <WindowStyle>
-        <Font>Sans-9:bold</Font>
+        <Font>Sans-9</Font>
         <Width>4</Width>
         <Height>21</Height>
-        <Corner>3</Corner>
+        <Corner>0</Corner>
         <Foreground>#93a1a1</Foreground>
         <Background>#002b36</Background>
         <Outline>#002b36</Outline>
@@ -191,17 +194,21 @@
 
     <Key mask="A" key="Tab">nextstacked</Key>
     <Key mask="A" key="F4">close</Key>
-    <Key mask="A" key="#">desktop#</Key>
     <Key mask="A" key="F1">root:1</Key>
     <Key mask="A" key="F2">window</Key>
     <Key mask="A" key="F10">maximize</Key>
-    <Key mask="A" key="Right">rdesktop</Key>
-    <Key mask="A" key="Left">ldesktop</Key>
-    <Key mask="A" key="Up">udesktop</Key>
-    <Key mask="A" key="Down">ddesktop</Key>
+    <Key mask="4" key="f">fullscreen</Key>
+
+    <Key mask="4" key="#">desktop#</Key>
+    <Key mask="4" key="Right">rdesktop</Key>
+    <Key mask="4" key="Left">ldesktop</Key>
+    <Key mask="4" key="Up">udesktop</Key>
+    <Key mask="4" key="Down">ddesktop</Key>
     <Key mask="4" key="d">exec:dmenu_run</Key>
     <Key mask="4" key="Return">exec:urxvt</Key>
     <Key mask="4" key="r">exec:jwm -restart</Key>
+    <Key mask="4" key="n">exec:pcmanfm</Key>
+    <Key mask="4" key="m">exec:urxvt -e ranger</Key>
 
     <!-- audio keys -->
     <Key key="XF86AudioRaiseVolume">exec:pamixer -i 5 -u</Key>
