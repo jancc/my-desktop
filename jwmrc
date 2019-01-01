@@ -22,6 +22,7 @@
         </Menu>
         <Menu icon="folder.png" label="Utilities">
             <Program icon="calculator.png" label="Calculator">urxvt -e calc</Program>
+            <Program label="htop">urxvt -e htop</Program>
             <Program icon="gimp.png" label="Gimp">gimp</Program>
             <!--
             <Program icon="font.png" label="Fonts">xfontsel</Program>
@@ -35,7 +36,7 @@
         </Menu>
         <Separator/>
         <Program icon="lock.png" label="Lock">
-            xlock -mode blank
+            ~/.janstuff/lock.sh
         </Program>
         <Separator/>
         <Exit label="Logout" confirm="true" icon="quit.png"/>
@@ -209,6 +210,7 @@
     <Key mask="4" key="r">exec:jwm -restart</Key>
     <Key mask="4" key="n">exec:pcmanfm</Key>
     <Key mask="4" key="m">exec:urxvt -e ranger</Key>
+    <Key mask="4" key="l">exec:~/.janstuff/lock.sh</Key>
 
     <!-- audio keys -->
     <Key key="XF86AudioRaiseVolume">exec:pamixer -i 5 -u</Key>
