@@ -229,6 +229,7 @@ bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sampl
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
 bindsym Mod4+l exec scrot /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
+bindsym --release Print exec scrot
 bindsym --release Mod4+Print exec scrot -s
 bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
 bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u

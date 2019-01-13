@@ -1,2 +1,2 @@
 #!/bin/sh
-exec jwm
+exec i3
