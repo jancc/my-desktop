@@ -55,10 +55,10 @@ bindsym Mod4+m exec x-terminal-emulator -e ranger
 # bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym Mod4+$left focus left
-bindsym Mod4+$down focus down
-bindsym Mod4+$up focus up
-bindsym Mod4+$right focus right
+#bindsym Mod4+$left focus left
+#bindsym Mod4+$down focus down
+#bindsym Mod4+$up focus up
+#bindsym Mod4+$right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
@@ -67,10 +67,10 @@ bindsym Mod4+Up focus up
 bindsym Mod4+Right focus right
 
 # move focused window
-bindsym Mod4+Shift+$left move left
-bindsym Mod4+Shift+$down move down
-bindsym Mod4+Shift+$up move up
-bindsym Mod4+Shift+$right move right
+#bindsym Mod4+Shift+$left move left
+#bindsym Mod4+Shift+$down move down
+#bindsym Mod4+Shift+$up move up
+#bindsym Mod4+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Shift+Left move left
@@ -158,10 +158,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+#        bindsym $left       resize shrink width 10 px or 10 ppt
+#        bindsym $down       resize grow height 10 px or 10 ppt
+#        bindsym $up         resize shrink height 10 px or 10 ppt
+#        bindsym $right      resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 10 px or 10 ppt
@@ -198,10 +198,10 @@ hide_edge_borders smart
 smart_gaps on
 gaps inner 16
 
-client.focused          #002b36 #55af33 #fdf6e3 #268bd2
-client.focused_inactive #002b36 #254f03 #839496 #073642
-client.unfocused        #002b36 #134321 #839496 #073642
-client.urgent           #002b36 #4f4312 #fdf6e3 #002b36
+client.focused          #002b36 #55af33 #fdf6e3 #268bd2 #55af33
+client.focused_inactive #002b36 #254f03 #839496 #073642 #254f03
+client.unfocused        #002b36 #134321 #839496 #073642 #134321
+client.urgent           #002b36 #4f4312 #fdf6e3 #002b36 #4f4312
 
 # class                 border  backgr. text    indicator child_border
 #client.focused          #18be18 #0d0d0d #00ea00 #00ea00   #2d522d
@@ -233,9 +233,10 @@ bindsym --release Print exec scrot
 bindsym --release Mod4+Print exec scrot -s
 bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
 bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u
+bindsym Mod4+Shift+n exec ~/.janstuff/connectie.sh
 
-exec redshift
-exec nm-applet
+exec redshift-gtk
+# exec nm-applet
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 
 exec export GTK_THEME=Arc-Dark
