@@ -35,7 +35,7 @@ font pango:monospace 8
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+Shift+Return exec x-terminal-emulator
+bindsym Mod4+Shift+Return exec termite
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -47,7 +47,7 @@ bindsym Mod4+Shift+d exec i3-dmenu-desktop
 # start pcmanfm
 bindsym Mod4+n exec pcmanfm
 # start ranger
-bindsym Mod4+m exec x-terminal-emulator -e ranger
+bindsym Mod4+m exec termite -e ranger
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -147,8 +147,8 @@ bindsym XF86AudioPrev exec mpc prev
 bindsym Mod4+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym Mod4+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# exit sway (logs you out of your X session)
+bindsym Mod4+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your wayland session.' -b 'Yes, exit sway' 'swaymsg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -181,6 +181,7 @@ bindsym Mod4+r mode "resize"
 bar {
     position bottom
     status_command i3blocks
+    mode hide
     colors {
         background #000000
         statusline #C5EF53
@@ -253,4 +254,4 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     dwt enabled
 }
 
-exec setxkbmap -option caps:escape
+output "*" background ~/.janstuff/wallpapers/space.jpg fill
