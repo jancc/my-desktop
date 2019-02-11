@@ -1,5 +1,7 @@
 function init_gui
     if status --is-login; and test -z "$DISPLAY"
+        echo 'starting X in 5 seconds...'
+        sleep 5
         startx
     end
 end
@@ -21,5 +23,5 @@ set -U fish_greeting
 set -U EDITOR vim
 set -U GOPATH $HOME/code/go
 
-# init_gui
 init_ssh_agent
+init_gui
