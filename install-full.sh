@@ -22,6 +22,7 @@ ln -f -s $PWD/fish ~/.config/fish
 ln -f -s $PWD/urxvt ~/.urxvt
 ln -f -s $PWD/jwmrc ~/.jwmrc
 ln -f -s $PWD/termite ~/.config/termite
+ln -f -s $PWD/compton.conf ~/.config/compton.conf
 sudo install pulseaudio-set-all-sink-inputs.sh /usr/local/bin/pulseaudio-set-all-sink-inputs
 sudo install brightness.sh /usr/local/bin/brightness-set
 sudo install x11-enable-screensaving.sh /usr/local/bin/x11-enable-screensaving

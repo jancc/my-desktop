@@ -67,4 +67,4 @@ hi NonText ctermbg=none
 hi LineNr ctermbg=none
 
 " column at x characters
-set colorcolumn=120
+set colorcolumn=80
