@@ -26,10 +26,10 @@ font pango:monospace 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-#set $up l
-#set $down k
-#set $left j
-#set $right semicolon
+set $up k
+set $down j
+set $left h
+set $right l
 
 # use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4
@@ -55,10 +55,10 @@ bindsym Mod4+m exec x-terminal-emulator -e ranger
 # bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-#bindsym Mod4+$left focus left
-#bindsym Mod4+$down focus down
-#bindsym Mod4+$up focus up
-#bindsym Mod4+$right focus right
+bindsym Mod4+$left focus left
+bindsym Mod4+$down focus down
+bindsym Mod4+$up focus up
+bindsym Mod4+$right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
@@ -79,10 +79,10 @@ bindsym Mod4+Shift+Up move up
 bindsym Mod4+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod4+h split h
+bindsym Mod4+Shift+h split h
 
 # split in vertical orientation
-bindsym Mod4+v split v
+bindsym Mod4+Shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym Mod4+f fullscreen toggle
@@ -229,7 +229,7 @@ exec pactl upload-sample ~/.janstuff/drip.ogg volchange
 bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample volchange
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
-bindsym Mod4+l exec scrot /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
+bindsym Mod4+Shift+l exec scrot /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
 bindsym --release Print exec scrot
 bindsym --release Mod4+Print exec scrot -s
 bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
