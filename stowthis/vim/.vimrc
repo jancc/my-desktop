@@ -21,6 +21,7 @@ syntax on
 
 " line numbers
 set number
+set relativenumber
 
 " maintain undo history
 set undofile

@@ -6,7 +6,7 @@ URxvt.transparent: true
 URxvt.tintColor: white
 URxvt.shading: 20
 URxvt.secondaryScroll: true
-URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=14
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=14
 URxvt.lineSpace: 1
 URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: firefox
