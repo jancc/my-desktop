@@ -39,6 +39,7 @@ set shortmess+=I
 call plug#begin('~/.vim/plugged')
 
 Plug 'valloric/youcompleteme'
+Plug 'rdnetto/ycm-generator', { 'branch': 'stable' }
 "Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'

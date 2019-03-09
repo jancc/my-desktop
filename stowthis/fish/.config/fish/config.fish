@@ -1,7 +1,7 @@
 function init_gui
     if status --is-login; and test -z "$DISPLAY"
-        echo 'starting X in 5 seconds...'
-        sleep 5
+        echo 'starting X in 2 seconds...'
+        sleep 2
         startx
     end
 end
