@@ -229,6 +229,7 @@ bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sampl
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
 # bindsym Mod4+Shift+l exec scrot /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && i3lock -i /tmp/screen.png -f
+bindsym Mod4+Shift+l exec swaylock -c 000000
 # bindsym --release Print exec scrot
 # bindsym --release Mod4+Print exec scrot -s
 bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
@@ -239,9 +240,9 @@ exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc
 exec export GTK_THEME=Arc-Dark
 
 # keyboard
-input Keyboard {
+input * {
     xkb_layout de
-    xkb_variant ,nodeadkeys
+    xkb_variant nodeadkeys
     xkb_options caps:escape
 }
 
@@ -253,4 +254,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 }
 
 output "*" background ~/.janstuff/wallpapers/space.jpg fill
+exec setxkbmap -layout de
+exec setxkbmap -variant nodeadkeys
 exec setxkbmap -option caps:escape
+
