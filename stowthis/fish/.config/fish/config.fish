@@ -2,7 +2,7 @@ function init_gui
     if status --is-login; and test -z "$DISPLAY"
         echo 'starting X in 2 seconds...'
         sleep 2
-        startx
+        sway; or startx
     end
 end
 

@@ -1,0 +1,7 @@
+source ./solarized-16-dark
+source "gpg -dq $HOME/.config/mutt/accounts/mailbox_passwd.gpg |"
+source ./accounts/mailbox
+
+set sort = threads
+set sidebar_visible = yes
+set editor = vim
