@@ -1,6 +1,6 @@
 function init_gui
-    if status --is-login; and test -z "$DISPLAY"
-        echo 'starting X in 2 seconds...'
+    if status --is-login; and test -z "$DISPLAY"; and test -z "$TMUX";
+        echo 'starting gui in 2 seconds...'
         sleep 2
         sway; or startx
     end
