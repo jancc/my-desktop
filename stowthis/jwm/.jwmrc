@@ -3,16 +3,16 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="terminal.png" label="Terminal">urxvt</Program>
+        <Program icon="terminal.png" label="Terminal">termite</Program>
         <Program label="KeepassXC">keepassxc</Program>
         <Menu icon="folder.png" label="Internet">
             <Program icon="www.png" label="Firefox">firefox</Program>
             <Program icon="www.png" label="Chromium">chromium</Program>
             <Program icon="chat.png" label="Thunderbird">thunderbird</Program>
-            <Program icon="chat.png" label="Youtube">urxvt -e mpsyt</Program>
+            <Program icon="chat.png" label="Youtube">termite -e mpsyt</Program>
         </Menu>
         <Menu icon="folder.png" label="Music">
-            <Program icon="music.png" label="ncmpcpp">urxvt -e ncmpcpp</Program>
+            <Program icon="music.png" label="ncmpcpp">termite -e ncmpcpp</Program>
             <Program icon="music.png" label="Spotify">spotify</Program>
         </Menu>
         <Menu icon="folder.png" label="Development">
@@ -21,8 +21,8 @@
             <Program icon="editor.png" label="IntelliJ IDEA">idea</Program>
         </Menu>
         <Menu icon="folder.png" label="Utilities">
-            <Program icon="calculator.png" label="Calculator">urxvt -e calc</Program>
-            <Program label="htop">urxvt -e htop</Program>
+            <Program icon="calculator.png" label="Calculator">termite -e calc</Program>
+            <Program label="htop">termite -e htop</Program>
             <Program icon="gimp.png" label="Gimp">gimp</Program>
             <!--
             <Program icon="font.png" label="Fonts">xfontsel</Program>
@@ -206,10 +206,10 @@
     <Key mask="4" key="Up">udesktop</Key>
     <Key mask="4" key="Down">ddesktop</Key>
     <Key mask="4" key="d">exec:dmenu_run</Key>
-    <Key mask="4" key="Return">exec:urxvt</Key>
+    <Key mask="4" key="Return">exec:termite</Key>
     <Key mask="4" key="r">exec:jwm -restart</Key>
     <Key mask="4" key="n">exec:pcmanfm</Key>
-    <Key mask="4" key="m">exec:urxvt -e ranger</Key>
+    <Key mask="4" key="m">exec:termite -e ranger</Key>
     <Key mask="4" key="l">exec:~/.janstuff/lock.sh</Key>
 
     <!-- audio keys -->
@@ -223,6 +223,7 @@
     <!-- run stuff on startup -->
     <StartupCommand>redshift-gtk</StartupCommand>
     <StartupCommand>nm-applet</StartupCommand>
+    <StartupCommand>compton</StartupCommand>
     <StartupCommand>setxkbmap -option caps:escape</StartupCommand>
     <StartupCommand>~/.janstuff/set-wallpaper.sh</StartupCommand>
     <RestartCommand>~/.janstuff/set-wallpaper.sh</RestartCommand>
