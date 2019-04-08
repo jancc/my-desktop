@@ -3,41 +3,12 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="terminal.png" label="Terminal">termite</Program>
+        <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
+        <Program icon="www.png" label="Firefox">firefox</Program>
+        <Program icon="www.png" label="Chromium">chromium</Program>
         <Program label="KeepassXC">keepassxc</Program>
-        <Menu icon="folder.png" label="Internet">
-            <Program icon="www.png" label="Firefox">firefox</Program>
-            <Program icon="www.png" label="Chromium">chromium</Program>
-            <Program icon="chat.png" label="Thunderbird">thunderbird</Program>
-            <Program icon="chat.png" label="Youtube">termite -e mpsyt</Program>
-        </Menu>
-        <Menu icon="folder.png" label="Music">
-            <Program icon="music.png" label="ncmpcpp">termite -e ncmpcpp</Program>
-            <Program icon="music.png" label="Spotify">spotify</Program>
-        </Menu>
-        <Menu icon="folder.png" label="Development">
-            <Program icon="editor.png" label="VSCode">code</Program>
-            <Program icon="editor.png" label="Android Studio">android-studio</Program>
-            <Program icon="editor.png" label="IntelliJ IDEA">idea</Program>
-        </Menu>
-        <Menu icon="folder.png" label="Utilities">
-            <Program icon="calculator.png" label="Calculator">termite -e calc</Program>
-            <Program label="htop">termite -e htop</Program>
-            <Program icon="gimp.png" label="Gimp">gimp</Program>
-            <!--
-            <Program icon="font.png" label="Fonts">xfontsel</Program>
-            <Program icon="window.png" label="Window Properties">
-                xprop | xmessage -file -
-            </Program>
-            <Program icon="window.png" label="Window Information">
-                xwininfo | xmessage -file -
-            </Program>
-            -->
-        </Menu>
         <Separator/>
-        <Program icon="lock.png" label="Lock">
-            ~/.janstuff/lock.sh
-        </Program>
+        <Program icon="lock.png" label="Lock">~/.janstuff/lock.sh</Program>
         <Separator/>
         <Exit label="Logout" confirm="true" icon="quit.png"/>
     </RootMenu>
@@ -91,7 +62,7 @@
         <Foreground>#93a1a1</Foreground>
         <Background>#002b36</Background>
         <Outline>#002b36</Outline>
-        <Opacity>0.5</Opacity>
+        <Opacity>1.0</Opacity>
         <Active>
             <Foreground>#eee8d5</Foreground>
             <Background>#002b36</Background>
@@ -104,7 +75,7 @@
         <Background>#002b36</Background>
         <Foreground>#93a1a1</Foreground>
         <Outline>#000000</Outline>
-        <Opacity>0.75</Opacity>
+        <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle>
       <Font>Sans-9</Font>
@@ -134,7 +105,7 @@
             <Foreground>#eee8d5</Foreground>
             <Background>#0077CC</Background>
         </Active>
-        <Opacity>0.85</Opacity>
+        <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>Sans-9</Font>
@@ -206,10 +177,10 @@
     <Key mask="4" key="Up">udesktop</Key>
     <Key mask="4" key="Down">ddesktop</Key>
     <Key mask="4" key="d">exec:dmenu_run</Key>
-    <Key mask="4" key="Return">exec:termite</Key>
+    <Key mask="4" key="Return">exec:x-terminal-emulator</Key>
     <Key mask="4" key="r">exec:jwm -restart</Key>
     <Key mask="4" key="n">exec:pcmanfm</Key>
-    <Key mask="4" key="m">exec:termite -e ranger</Key>
+    <Key mask="4" key="m">exec:x-terminal-emulator -e ranger</Key>
     <Key mask="4" key="l">exec:~/.janstuff/lock.sh</Key>
 
     <!-- audio keys -->
@@ -223,7 +194,6 @@
     <!-- run stuff on startup -->
     <StartupCommand>redshift-gtk</StartupCommand>
     <StartupCommand>nm-applet</StartupCommand>
-    <StartupCommand>compton</StartupCommand>
     <StartupCommand>setxkbmap -option caps:escape</StartupCommand>
     <StartupCommand>~/.janstuff/set-wallpaper.sh</StartupCommand>
     <RestartCommand>~/.janstuff/set-wallpaper.sh</RestartCommand>
