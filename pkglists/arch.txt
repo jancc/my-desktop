@@ -2,6 +2,8 @@ firefox
 thunderbird
 gvim
 i3lock
+i3blocks
+i3-gaps
 compton
 mpd
 mpc
@@ -22,5 +24,7 @@ w3m
 acpi
 pamixer
 alsa-utils
-plasma
-dolphin
+networkmanager
+network-manager-applet
+unclutter
+redshift
