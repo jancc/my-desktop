@@ -237,7 +237,6 @@ bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u
 bindsym Mod4+Shift+n exec ~/.janstuff/connectie.sh
 
 exec redshift-gtk
-exec compton
 exec nm-applet
 exec unclutter
 

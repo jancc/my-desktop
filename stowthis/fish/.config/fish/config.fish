@@ -6,8 +6,8 @@ function init_gui
     end
 end
 
-function did
-    vim +'norm Go' +'r!date' +'norm o' ~/Sync/did.txt
+function today
+    vim +'norm G' ~/Sync/log/(date +%F).txt
 end
 
 function init_ssh_agent
