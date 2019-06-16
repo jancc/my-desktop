@@ -10,4 +10,15 @@ export XDG_PUBLICSHARE_DIR="$HOME/Public"
 export XDG_TEMPLATES_DIR="$HOME/Templates"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
-exec i3
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc
+export GTK_THEME=Arc-Dark
+
+unclutter &
+redshift-gtk &
+pactl upload-sample ~/.janstuff/drip.ogg volchange
+setxkbmap -option caps:escape
+~/.janstuff/set-wallpaper.sh
+
+exec dwm
