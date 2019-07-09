@@ -17,8 +17,9 @@ export GTK_THEME=Arc-Dark
 
 unclutter &
 redshift-gtk &
+dwmstatus &
 pactl upload-sample ~/.janstuff/drip.ogg volchange
 setxkbmap -option caps:escape
-~/.janstuff/set-wallpaper.sh
+#~/.janstuff/set-wallpaper.sh
 
 exec dwm

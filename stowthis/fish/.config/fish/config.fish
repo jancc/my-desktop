@@ -19,6 +19,11 @@ function init_ssh_agent
     end
 end
 
+function git-archive-helper
+    set FOLDER (basename (pwd))
+    git archive --prefix $FOLDER/ --format tar HEAD | gzip > $FOLDER.tar.gz
+end
+
 set -U fish_greeting
 set -U EDITOR vim
 set -U GOPATH $HOME/code/go

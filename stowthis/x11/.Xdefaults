@@ -16,8 +16,8 @@ URxvt.secondaryScroll:	true
 URxvt.tintColor:	white
 URxvt.foreground:	grey
 URxvt.perl-ext-common:	default,clipboard,font-size
-URxvt*inheritPixmap:	true
-URxvt.transparent:	true
+#URxvt*inheritPixmap:	true
+#URxvt.transparent:	true
 URxvt.shading:	25
 URxvt.saveLines:	1000
 URxvt.font:	xft:DejaVu Sans Mono:pixelsize=14
