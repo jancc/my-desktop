@@ -29,4 +29,4 @@ set -U EDITOR vim
 set -U GOPATH $HOME/code/go
 
 init_ssh_agent
-init_gui
+#init_gui
