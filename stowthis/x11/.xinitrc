@@ -12,4 +12,4 @@ export XDG_VIDEOS_DIR="$HOME/Videos"
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-setxkbmap -option caps:escape
+exec i3
