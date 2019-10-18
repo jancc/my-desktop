@@ -70,3 +70,7 @@ hi LineNr ctermbg=none
 
 " column at x characters
 set colorcolumn=80
+
+" sexy statusline
+set laststatus=2
+set statusline=\ %n:\ %<%f\ %#StatusLineNC#\ %H%M%R%=%b=0x%B\ \|\ %cx%l%V\ \|\ %p%%\ 
