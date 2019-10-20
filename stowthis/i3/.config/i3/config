@@ -239,6 +239,8 @@ bindsym Mod4+Shift+n exec ~/.janstuff/connectie.sh
 exec redshift-gtk
 exec nm-applet
 exec unclutter
+exec compton
+exec dunst
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc
 exec export GTK_THEME=Arc-Dark
