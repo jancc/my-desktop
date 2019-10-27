@@ -9,9 +9,10 @@ folder-hook $folder 'source "gpg -d $HOME/.config/mutt/accounts/2 |"
 
 set sort = threads
 set editor = vim
+set mailcap_path = ~/.config/mutt/mailcap
 
 set sidebar_visible = yes
-set sidebar_width = 20
+set sidebar_width = 40
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
 
 # Move the highlight to the previous mailbox
