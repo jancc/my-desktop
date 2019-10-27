@@ -230,9 +230,6 @@ bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sampl
 bindsym Mod4+Shift+F12 exec pulseaudio-set-all-sink-inputs 2 && pactl play-sample volchange
 bindsym Mod4+Shift+l exec grim /tmp/screen.png && convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png && swaylock -i /tmp/screen.png -f
 bindsym --release Print exec grim ~/$(date +screen-%d%m%y-%H-%M-%S.png)
-bindsym Mod4+Shift+m exec ~/.janstuff/mountie.sh
-bindsym Mod4+Shift+u exec ~/.janstuff/mountie.sh -u
-bindsym Mod4+Shift+n exec ~/.janstuff/connectie.sh
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc 
 exec export GTK_THEME=Arc-Dark
@@ -251,8 +248,10 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     dwt enabled
 }
 
-exec ~/.janstuff/set-wallpaper-sway.sh
+exec ~/.janstuff/bin/set-wallpaper-sway.sh
 exec setxkbmap -layout de
 exec setxkbmap -variant nodeadkeys
 exec setxkbmap -option caps:escape
+
+exec guake
 

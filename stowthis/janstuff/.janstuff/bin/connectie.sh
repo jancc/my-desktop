@@ -1,5 +1,5 @@
 #!/bin/sh
-SUDO=lxsudo
+SUDO=sudo
 WLANNAME=`netctl list | dmenu`
 if [ ! $WLANNAME ]; then
     $SUDO netctl stop-all

@@ -24,9 +24,18 @@ function git-archive-helper
     git archive --prefix $FOLDER/ --format tar HEAD | gzip > $FOLDER.tar.gz
 end
 
+function ffmpeg-webify-vp8
+    ffmpeg -i $argv[1] -c:v libvpx -qmin 0 -qmax 50 -crf 5 -b:v 1M -vf scale=360:-1 -c:a libvorbis $argv[1]-web-vp8.webm
+end
+
+function ffmpeg-webify-vp9
+    ffmpeg -i $argv[1] -c:v libvpx-vp9 -crf 30 -b:v 1M -vf scale=360:-1 -c:a libopus $argv[1]-web-vp9.webm
+end
+
 set -U fish_greeting
 set -U EDITOR vim
 set -U GOPATH $HOME/code/go
+set PATH $HOME/.janstuff/bin $PATH
 
 init_ssh_agent
 #init_gui
