@@ -234,7 +234,7 @@ bindsym --release Mod4+Print exec scrot -s
 exec redshift-gtk
 exec nm-applet
 exec unclutter
-exec compton
+exec picom
 exec dunst
 exec guake
 
