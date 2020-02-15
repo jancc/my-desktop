@@ -74,3 +74,14 @@ set colorcolumn=80
 " sexy statusline
 set laststatus=2
 set statusline=\ %n:\ %<%f\ %#StatusLineNC#\ %H%M%R%=%b=0x%B\ \|\ %cx%l%V\ \|\ %p%%\ 
+
+" vimtex
+let g:vimtex_compiler_latexmk = { 
+\ 'executable' : 'latexmk',
+\ 'options' : [ 
+\   '-xelatex',
+\   '-file-line-error',
+\   '-synctex=1',
+\   '-interaction=nonstopmode',
+\ ],
+\}
