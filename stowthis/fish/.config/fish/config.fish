@@ -21,7 +21,7 @@ end
 
 function git-archive-helper
     set FOLDER (basename (pwd))
-    git archive --prefix $FOLDER/ --format tar HEAD | gzip > $FOLDER.tar.gz
+    git archive --prefix $FOLDER/ --format tar HEAD > $FOLDER.tar
 end
 
 function ffmpeg-webify-vp8
