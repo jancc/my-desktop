@@ -32,7 +32,7 @@ function mount {
 }
 
 function unmount {
-    devices=( $(lsblk -lp | grep -v "part *$" | grep "part" | awk '{print $1}') )
+    devices=( $(lsblk -lp | grep -v "part *$" | grep "part" | awk '{print $1 " " $7}') )
     echo $devices
 
     if [ ${#devices[@]} -eq 0 ]; then

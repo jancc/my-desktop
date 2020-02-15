@@ -7,7 +7,7 @@
 ; mode = normal
  
 # Accepts only non-negative values.
-; framerate = 60
+; framerate = 30
 
 # 'autosens' will attempt to decrease sensitivity if the bars peak. 1 = on, 0 = off
 # new as of 0.6.0 autosens of low values (dynamic range)
@@ -107,8 +107,8 @@ channels = mono
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
 # Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires a
 # terminal that can change color definitions such as Gnome-terminal or rxvt.
-; background = black
-; foreground = cyan
+; background = yellow
+; foreground = black
 
 # Gradient mode, only hex defined colors are supported, background must also be defined in hex
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will

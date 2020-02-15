@@ -1,0 +1,8 @@
+Map Escape to Capslock:
+
+$ dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+
+Turn off tracker:
+
+$ systemctl --user mask tracker-store.service tracker-miner-fs.service tracker-miner-rss.service tracker-extract.service tracker-miner-apps.service tracker-writeback.service
+$ tracker reset --hard
