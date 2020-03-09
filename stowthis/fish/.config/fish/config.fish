@@ -34,7 +34,6 @@ end
 
 set -U fish_greeting
 set -U EDITOR vim
-set -U GOPATH $HOME/code/go
 set PATH $HOME/.janstuff/bin $PATH
 
 init_ssh_agent
