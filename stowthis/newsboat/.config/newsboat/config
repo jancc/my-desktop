@@ -1,4 +1,3 @@
-show-keymap-hint false 
 browser w3m
 pager internal
 
@@ -15,9 +14,9 @@ macro y set browser "mpv %u"; open-in-browser ; set browser "w3m %u"
 
 color background default default
 color listnormal white default
-color listfocus blue default standout
-color info blue default standout
-color listfocus_unread blue default
+color listfocus green default standout
+color info green default standout
+color listfocus_unread green default
 color listnormal_unread yellow default
 
 feed-sort-order name
