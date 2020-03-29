@@ -19,4 +19,4 @@ color info green default standout
 color listfocus_unread green default
 color listnormal_unread yellow default
 
-feed-sort-order name
+feed-sort-order title

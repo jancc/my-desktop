@@ -45,6 +45,7 @@ Plug 'tomasr/molokai'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'lervag/vimtex'
+Plug 'fatih/vim-go'
 
 call plug#end()
 

@@ -10,6 +10,8 @@ playlist_display_mode = classic
 
 progressbar_look = "─╼─"
 main_window_color = white
-main_window_highlight_color = green
+current_item_prefix = "$(green)$r"
+current_item_suffix = "$/r$(end)"
 visualizer_color = green
-active_column_color = green
+current_item_inactive_column_prefix = "$(green)$r"
+current_item_inactive_column_suffix = "$/r$(end)"
