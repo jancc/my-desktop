@@ -12,7 +12,7 @@ end
 
 function init_ssh_agent
     if not pgrep -u "$USER" ssh-agent > /dev/null
-        ssh-agent -c > ~/.ssh-agent-values
+        ssh-agent -c | head -n 2 > ~/.ssh-agent-values
     end
     if test -z "$SSH_AGENT_PID"
         source ~/.ssh-agent-values
