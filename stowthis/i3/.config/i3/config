@@ -134,7 +134,7 @@ bindsym Mod4+Shift+0 move container to workspace 10
 # audio keys
 bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && exec pkill -SIGRTMIN+2 i3blocks
 bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && exec pkill -SIGRTMIN+2 i3blocks
-bindsym XF86AudioMute exec pamixer -t
+bindsym XF86AudioMute exec pamixer -t && exec pkill -SIGRTMIN+2 i3blocks
 bindsym XF86AudioPlay exec mpc toggle && exec pkill -SIGRTMIN+1 i3blocks
 bindsym XF86AudioNext exec mpc next && exec pkill -SIGRTMIN+1 i3blocks
 bindsym XF86AudioPrev exec mpc prev && exec pkill -SIGRTMIN+1 i3blocks
