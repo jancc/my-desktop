@@ -11,11 +11,9 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
-
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -134,12 +132,12 @@ bindsym Mod4+Shift+9 move container to workspace 9
 bindsym Mod4+Shift+0 move container to workspace 10
 
 # audio keys
-bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && pactl play-sample volchange
-bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && pactl play-sample volchange
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 -u && exec pkill -SIGRTMIN+2 i3blocks
+bindsym XF86AudioLowerVolume exec pamixer -d 5 -u && exec pkill -SIGRTMIN+2 i3blocks
 bindsym XF86AudioMute exec pamixer -t
-bindsym XF86AudioPlay exec mpc toggle
-bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPlay exec mpc toggle && exec pkill -SIGRTMIN+1 i3blocks
+bindsym XF86AudioNext exec mpc next && exec pkill -SIGRTMIN+1 i3blocks
+bindsym XF86AudioPrev exec mpc prev && exec pkill -SIGRTMIN+1 i3blocks
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
@@ -177,7 +175,7 @@ bindsym Mod4+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    mode hide
+    mode dock
     position bottom
     status_command i3blocks
     colors {
@@ -223,6 +221,7 @@ client.urgent           #002b36 #4f4312 #fdf6e3 #002b36 #4f4312
 #exec i3-config-wizard
 
 exec ~/.janstuff/bin/set-wallpaper.sh
+exec systemctl --user restart pulseaudio
 exec pactl upload-sample ~/.janstuff/drip.ogg volchange
 bindsym Mod4+Shift+F10 exec pulseaudio-set-all-sink-inputs 0 && pactl play-sample volchange
 bindsym Mod4+Shift+F11 exec pulseaudio-set-all-sink-inputs 1 && pactl play-sample volchange
