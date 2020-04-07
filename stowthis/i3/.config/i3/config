@@ -39,8 +39,7 @@ bindsym Mod4+Shift+Return exec x-terminal-emulator
 bindsym Mod4+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym Mod4+Shift+d exec rofi -show run
-bindsym Mod4+d exec j4-dmenu-desktop --term="termite" --dmenu='rofi -dmenu -i' --no-generic
+bindsym Mod4+d exec rofi -show run
 
 # start ranger
 bindsym Mod4+m exec x-terminal-emulator -e ranger
