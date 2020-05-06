@@ -10,6 +10,7 @@ set autoindent
 set smartindent
 set expandtab
 set mouse=a
+set ttymouse=sgr
 set scrolloff=5
 
 " show invisible characters
