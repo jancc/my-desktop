@@ -32,9 +32,21 @@ function ffmpeg-webify-vp9
     ffmpeg -i $argv[1] -c:v libvpx-vp9 -crf 30 -b:v 1M -vf scale=360:-1 -c:a libopus $argv[1]-web-vp9.webm
 end
 
+function wine-set-32bit-prefix
+    set -U -x WINEPREFIX $HOME/wine/wine32
+    mkdir -p $WINEPREFIX
+    set -U -x WINEARCH win32
+end
+
+function wine-set-64bit-prefix
+    set -U -x WINEPREFIX $HOME/wine/wine64
+    mkdir -p $WINEPREFIX
+    set -U -x WINEARCH win64
+end
+
 set -U fish_greeting
 set -U EDITOR vim
 set PATH $HOME/.janstuff/bin $PATH
 
-init_ssh_agent
+#init_ssh_agent
 #init_gui
