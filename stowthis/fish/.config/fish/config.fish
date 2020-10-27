@@ -45,7 +45,7 @@ function wine-set-64bit-prefix
 end
 
 function org
-    emacs -nw ~/Sync/planner.org
+    emacs -nw ~/Sync/orgmode/main.org
 end
 
 set -U fish_greeting
