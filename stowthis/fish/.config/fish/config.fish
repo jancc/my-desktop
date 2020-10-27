@@ -45,7 +45,11 @@ function wine-set-64bit-prefix
 end
 
 function org
-    emacs -nw ~/Sync/orgmode/main.org
+    if test (count $argv) -gt 0
+        emacs -nw ~/Sync/orgmode/$argv[1].org
+    else
+        emacs -nw ~/Sync/orgmode/main.org
+    end
 end
 
 set -U fish_greeting
