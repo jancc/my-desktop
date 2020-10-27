@@ -44,6 +44,10 @@ function wine-set-64bit-prefix
     set -U -x WINEARCH win64
 end
 
+function org
+    emacs -nw ~/Sync/planner.org
+end
+
 set -U fish_greeting
 set -U EDITOR vim
 set PATH $HOME/.janstuff/bin $PATH
