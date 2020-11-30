@@ -46,9 +46,9 @@ end
 
 function org
     if test (count $argv) -gt 0
-        emacs -nw ~/Sync/orgmode/$argv[1].org
+        emacs -nw ~/org/$argv[1].org
     else
-        emacs -nw ~/Sync/orgmode/main.org
+        emacs -nw ~/org/main.org
     end
 end
 
