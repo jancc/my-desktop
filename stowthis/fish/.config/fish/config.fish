@@ -46,9 +46,9 @@ end
 
 function org
     if test (count $argv) -gt 0
-        emacs -nw ~/org/$argv[1].org
+        emacs -nw ~/lot/org/$argv[1].org
     else
-        emacs -nw ~/org/main.org
+        emacs -nw ~/lot/org/main.org
     end
 end
 
@@ -56,5 +56,5 @@ set -U fish_greeting
 set -U EDITOR vim
 set PATH $HOME/.janstuff/bin $PATH
 
-#init_ssh_agent
+init_ssh_agent
 #init_gui

@@ -39,7 +39,7 @@ bindsym Mod4+Shift+Return exec x-terminal-emulator
 bindsym Mod4+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym Mod4+d exec rofi -show run
+bindsym Mod4+d exec j4-dmenu-desktop --term="x-terminal-emulator" --no-generic
 
 # start ranger
 bindsym Mod4+m exec x-terminal-emulator -e ranger
@@ -231,11 +231,11 @@ bindsym --release Print exec scrot
 bindsym --release Mod4+Print exec scrot -s
 
 exec redshift-gtk
-exec nm-applet
+#exec nm-applet
 exec unclutter
-exec picom
+#exec picom
 exec dunst
-exec guake
+#exec guake
 
 exec export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc
 exec export GTK_THEME=Arc-Dark
