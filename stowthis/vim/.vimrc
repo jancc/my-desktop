@@ -81,7 +81,6 @@ set statusline=\ %n:\ %<%f\ %#StatusLineNC#\ %H%M%R%=%b=0x%B\ \|\ %cx%l%V\ \|\ %
 let g:vimtex_compiler_latexmk = { 
 \ 'executable' : 'latexmk',
 \ 'options' : [ 
-\   '-xelatex',
 \   '-file-line-error',
 \   '-synctex=1',
 \   '-interaction=nonstopmode',

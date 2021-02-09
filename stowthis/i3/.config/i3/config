@@ -13,7 +13,8 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 8
+font unscii
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -39,7 +40,7 @@ bindsym Mod4+Shift+Return exec x-terminal-emulator
 bindsym Mod4+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym Mod4+d exec j4-dmenu-desktop --term="x-terminal-emulator" --no-generic
+bindsym Mod4+d exec j4-dmenu-desktop --dmenu="dmenu -fn unscii -i -b" --term="x-terminal-emulator" --no-generic
 
 # start ranger
 bindsym Mod4+m exec x-terminal-emulator -e ranger
@@ -174,7 +175,8 @@ bindsym Mod4+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    mode dock
+#    mode dock
+    mode hide
     position bottom
     status_command i3blocks
     colors {
@@ -233,7 +235,7 @@ bindsym --release Mod4+Print exec scrot -s
 exec redshift-gtk
 #exec nm-applet
 exec unclutter
-#exec picom
+exec picom
 exec dunst
 #exec guake
 
