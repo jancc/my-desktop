@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import sys
+import os
+
+urls = {
+    "nts-1": "https://stream-relay-geo.ntslive.net/stream",
+    "nts-2": "https://stream-relay-geo.ntslive.net/stream2",
+    "kexp": "https://kexp-mp3-128.streamguys1.com/kexp128.mp3",
+    "orange-94": "https://securestream.o94.at/live.mp3",
+}
+
+if len(sys.argv) < 2:
+    print("usage: radio <station>")
+    stations = ", ".join(urls.keys())
+    print(f"stations: {stations}")
+
+    sys.exit(0)
+
+station = sys.argv[1].lower()
+
+if station not in urls:
+    print("unknown station")
+    sys.exit(1)
+
+os.system(f"mpv {urls[station]}")

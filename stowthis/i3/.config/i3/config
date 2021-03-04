@@ -40,7 +40,7 @@ bindsym Mod4+Shift+Return exec x-terminal-emulator
 bindsym Mod4+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym Mod4+d exec j4-dmenu-desktop --dmenu="dmenu -fn unscii -i -b" --term="x-terminal-emulator" --no-generic
+bindsym Mod4+d exec "rofi -modi drun,run -show drun"
 
 # start ranger
 bindsym Mod4+m exec x-terminal-emulator -e ranger
@@ -176,7 +176,7 @@ bindsym Mod4+r mode "resize"
 # finds out, if available)
 bar {
 #    mode dock
-    mode hide
+    mode dock
     position bottom
     status_command i3blocks
     colors {
