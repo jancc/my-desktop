@@ -53,7 +53,8 @@ function org
 end
 
 set -U fish_greeting
-set -U EDITOR vim
+set -x EDITOR vim
+set -x PASSWORD_STORE_DIR $HOME/lot/password-store
 set PATH $HOME/.janstuff/bin $PATH
 
 init_ssh_agent
