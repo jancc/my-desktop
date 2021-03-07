@@ -22,4 +22,7 @@ if station not in urls:
     print("unknown station")
     sys.exit(1)
 
-os.system(f"mpv {urls[station]}")
+os.system("mpc stop")
+os.system("mpc clear")
+os.system(f"mpc add {urls[station]}")
+os.system("mpc play")
