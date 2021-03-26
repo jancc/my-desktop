@@ -1,4 +1,0 @@
-~/.janstuff/set-wallpaper.sh
-compton
-redshift-gtk
-setxkpmap -option caps:escape
