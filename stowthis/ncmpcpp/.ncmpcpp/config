@@ -8,7 +8,7 @@ cyclic_scrolling = no
 lines_scrolled = 1
 playlist_display_mode = classic
 
-progressbar_look = "─╼─"
+progressbar_look = "─> "
 main_window_color = white
 current_item_prefix = "$(green)$r"
 current_item_suffix = "$/r$(end)"
