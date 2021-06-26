@@ -1,28 +1,29 @@
 #!/usr/bin/env python3
-import sys
-import os
+from sys import exit, argv
+from os import system
 
 urls = {
     "nts-1": "https://stream-relay-geo.ntslive.net/stream",
     "nts-2": "https://stream-relay-geo.ntslive.net/stream2",
     "kexp": "https://kexp-mp3-128.streamguys1.com/kexp128.mp3",
     "orange-94": "https://securestream.o94.at/live.mp3",
+    "tilde": "https://radio.tildeverse.org/radio/8000/radio.ogg",
 }
 
-if len(sys.argv) < 2:
+if len(argv) < 2:
     print("usage: radio <station>")
     stations = ", ".join(urls.keys())
     print(f"stations: {stations}")
 
-    sys.exit(0)
+    exit(0)
 
-station = sys.argv[1].lower()
+station = argv[1].lower()
 
 if station not in urls:
     print("unknown station")
-    sys.exit(1)
+    exit(1)
 
-os.system("mpc stop")
-os.system("mpc clear")
-os.system(f"mpc add {urls[station]}")
-os.system("mpc play")
+system("mpc stop")
+system("mpc clear")
+system(f"mpc add {urls[station]}")
+system("mpc play")

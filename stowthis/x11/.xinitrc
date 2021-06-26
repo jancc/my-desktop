@@ -12,4 +12,18 @@ export XDG_VIDEOS_DIR="$HOME/Videos"
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-exec i3
+export GTK_RC_FILES=/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc
+export GTK_THEME=Arc-Dark
+
+#exec i3
+
+~/.janstuff/bin/set-wallpaper.sh &
+systemctl --user restart pulseaudio &
+unclutter &
+#picom &
+dunst &
+setxkbmap -option caps:escape &
+xscreensaver --no-splash &
+xstatus &
+
+exec sowm
