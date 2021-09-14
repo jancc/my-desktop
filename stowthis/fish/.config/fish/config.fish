@@ -57,5 +57,5 @@ set -x EDITOR vim
 set -x PASSWORD_STORE_DIR $HOME/lot/password-store
 set PATH $HOME/.janstuff/bin $PATH
 
-init_ssh_agent
+#init_ssh_agent
 #init_gui
