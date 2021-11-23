@@ -15,4 +15,6 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 export SDL_VIDEODRIVER=wayland
 
+export MOZ_ENABLE_WAYLAND=1
+
 exec sway
