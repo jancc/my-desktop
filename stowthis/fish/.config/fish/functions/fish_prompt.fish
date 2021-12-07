@@ -17,42 +17,42 @@ function fish_prompt --description 'Write out the prompt'
 
     # PWD
     set_color $fish_color_cwd
-    echo -n (prompt_pwd)
+    echo -n (basename (pwd))
     set_color normal
 
     if not test $last_status -eq 0
         set_color $fish_color_error
     end
 
+    fish_git_prompt "@%s"
+
     echo
     echo -n '$ '
     set_color normal
 end
 
-function fish_right_prompt
-    # Git
-    if not set -q __fish_git_prompt_show_informative_status
-        set -g __fish_git_prompt_show_informative_status 1
-    end
-    if not set -q __fish_git_prompt_color_branch
-        set -g __fish_git_prompt_color_branch brmagenta
-    end
-    if not set -q __fish_git_prompt_showupstream
-        set -g __fish_git_prompt_showupstream "informative"
-    end
-    if not set -q __fish_git_prompt_showdirtystate
-        set -g __fish_git_prompt_showdirtystate "yes"
-    end
-    if not set -q __fish_git_prompt_color_stagedstate
-        set -g __fish_git_prompt_color_stagedstate yellow
-    end
-    if not set -q __fish_git_prompt_color_invalidstate
-        set -g __fish_git_prompt_color_invalidstate red
-    end
-    if not set -q __fish_git_prompt_color_cleanstate
-        set -g __fish_git_prompt_color_cleanstate brgreen
-    end
-
-    __fish_git_prompt
-    __fish_hg_prompt
+# Git
+if not set -q __fish_git_prompt_show_informative_status
+    set -g __fish_git_prompt_show_informative_status 1
+end
+if not set -q __fish_git_prompt_color_branch
+    set -g __fish_git_prompt_color_branch brmagenta
+end
+if not set -q __fish_git_prompt_showupstream
+    set -g __fish_git_prompt_showupstream "informative"
+end
+if not set -q __fish_git_prompt_showdirtystate
+    set -g __fish_git_prompt_showdirtystate "yes"
+end
+if not set -q __fish_git_prompt_color_stagedstate
+    set -g __fish_git_prompt_color_stagedstate yellow
+end
+if not set -q __fish_git_prompt_color_invalidstate
+    set -g __fish_git_prompt_color_invalidstate red
+end
+if not set -q __fish_git_prompt_color_cleanstate
+    set -g __fish_git_prompt_color_cleanstate brgreen
+end
+if not set -q __fish_git_prompt_char_stateseparator
+    set -g __fish_git_prompt_char_stateseparator ' '
 end
