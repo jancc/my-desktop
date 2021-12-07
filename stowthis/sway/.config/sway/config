@@ -33,12 +33,11 @@ bindsym Mod4+Down focus down
 bindsym Mod4+Up focus up
 bindsym Mod4+Right focus right
 
-# move focused window (vi keys) (CONFLICTS)
-#bindsym Mod4+Shift+$left move left
-#bindsym Mod4+Shift+$down move down
-#bindsym Mod4+Shift+$up move up
-#bindsym Mod4+Shift+$right move right
-
+# move focused window (vi keys)
+bindsym Mod4+Ctrl+$left move left
+bindsym Mod4+Ctrl+$down move down
+bindsym Mod4+Ctrl+$up move up
+bindsym Mod4+Ctrl+$right move right
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Shift+Left move left
 bindsym Mod4+Shift+Down move down
@@ -129,10 +128,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-#        bindsym $left       resize shrink width 10 px or 10 ppt
-#        bindsym $down       resize grow height 10 px or 10 ppt
-#        bindsym $up         resize shrink height 10 px or 10 ppt
-#        bindsym $right      resize grow width 10 px or 10 ppt
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 10 px or 10 ppt
