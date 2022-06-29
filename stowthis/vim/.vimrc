@@ -40,9 +40,8 @@ set shortmess+=I
 call plug#begin('~/.vim/plugged')
 
 Plug 'valloric/youcompleteme'
-Plug 'rdnetto/ycm-generator', { 'branch': 'stable' }
 Plug 'tomasr/molokai'
-"Plug 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'lervag/vimtex'
@@ -61,7 +60,7 @@ colorscheme molokai
 let g:molokai_original=1
 " solarized
 "colorscheme solarized
-"set background=dark
+"set background=light
 "let g:solarized_termtrans=0
 "let g:solarized_visibility='high'
 
