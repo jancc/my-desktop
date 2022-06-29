@@ -8,6 +8,7 @@ urls = {
     "kexp": "https://kexp-mp3-128.streamguys1.com/kexp128.mp3",
     "orange-94": "https://securestream.o94.at/live.mp3",
     "tilde": "https://radio.tildeverse.org/radio/8000/radio.ogg",
+    "bob": "https://bob.hoerradar.de/radiobob-national-mp3-hq",
 }
 
 if len(argv) < 2:
