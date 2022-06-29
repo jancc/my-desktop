@@ -24,7 +24,7 @@ function fish_prompt --description 'Write out the prompt'
         set_color $fish_color_error
     end
 
-    fish_git_prompt "@%s"
+    fish_git_prompt " @%s"
 
     echo
     echo -n '$ '
